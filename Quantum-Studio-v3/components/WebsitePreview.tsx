@@ -1,4 +1,5 @@
 
+
 import React, { useMemo, useState, useEffect, useRef, forwardRef } from 'react';
 import pako from 'pako';
 import * as previewService from '../services/previewService';
@@ -317,7 +318,9 @@ export const WebsitePreview = forwardRef<HTMLIFrameElement, WebsitePreviewProps>
             if (event.data && event.data.type === 'console') {
                 const { level, message } = event.data;
                 const validLevels: LogMessage['level'][] = ['log', 'debug', 'info', 'warn', 'error'];
-                const logLevel = validLevels.includes(level) ? level : 'log';
+                
+                const isLevelValid = (l: any): l is LogMessage['level'] => validLevels.includes(l);
+                const logLevel = isLevelValid(level) ? level : 'log';
                 
                 const newLog = { level: logLevel, message, timestamp: new Date() };
                 setLogs(prevLogs => [newLog, ...prevLogs]);
