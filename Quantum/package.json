@@ -4,13 +4,10 @@
   "private": true,
   "scripts": {
     "build": "echo No build step needed for pure static site",
-    // Or if you have a simple copy step for some reason:
     // "build": "mkdir -p dist && cp -r public/* dist/"
   },
   "dependencies": {
-    // If you use any client-side libraries installed via npm
   },
   "devDependencies": {
-    // If you use any dev tools like linters, local dev servers etc.
   }
 }
