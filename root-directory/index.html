@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2UADevETCubE4kyiGuoEVgozzJGzdiJyDdGSgEehUscvMZUuBrYQgVZakrG/iaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -176,15 +176,16 @@
   }
 }
 </script>
-<!-- Babel for live preview transpilation -->
 <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 <link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
-    <script src="https://assets.cello.so/app/latest/cello.js"></script>
-    <script src="https://assets.cello.so/attribution/latest/cello-attribution.js"></script>
+    <script type="module" src="/index.js"></script>
+    
+    <script type="module" src="https://assets.cello.so/app/latest/cello.js"></script>
+    
+    <script type="module" src="https://assets.cello.so/attribution/latest/cello-attribution.js"></script>
     <script>
 !function() {
     var e = {
@@ -397,8 +398,8 @@
                     e.documentElement.innerHTML = t,
                     e.documentElement.setAttribute("lang", n)
                 }(e.contentDocument, t, n)
-            }(n, '<!DOCTYPE html>\n     <html lang="en">\n       <head>\n         ' + t + "\n       </head>\n       <body>\n       <script type="module" src="/index.tsx"></script>
-</body>\n     </html>");
+            }(n, '<!DOCTYPE html>\n          <html lang="en">\n            <head>\n              ' + t + '\n            </head>\n            <body>\n            <script type="module" src="/index.tsx"></script>
+</body>\n          </html>');
             var r, i = !!(r = S()) && r[0] >= 120, a = p(i ? h : f), s = p(i ? v : w);
             return n.contentDocument.head.appendChild(a),
             n.contentDocument.head.appendChild(s),
