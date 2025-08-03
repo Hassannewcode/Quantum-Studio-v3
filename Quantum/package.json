@@ -1,13 +1,16 @@
 {
-  "name": "quantum-code",
-  "version": "0.1.0",
+  "name": "quantum-studio-v3-static",
+  "version": "1.0.0",
   "private": true,
-  "description": "An AI-powered web development environment.",
   "scripts": {
-    "dev": "serve -p 3000",
-    "start": "serve -p ${PORT:-8080}"
+    "build": "echo No build step needed for pure static site",
+    // Or if you have a simple copy step for some reason:
+    // "build": "mkdir -p dist && cp -r public/* dist/"
+  },
+  "dependencies": {
+    // If you use any client-side libraries installed via npm
   },
   "devDependencies": {
-    "serve": "^14.2.3"
+    // If you use any dev tools like linters, local dev servers etc.
   }
 }
