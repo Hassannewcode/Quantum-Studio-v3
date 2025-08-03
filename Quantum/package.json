@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "echo No build step needed for pure static site",
-    // "build": "mkdir -p dist && cp -r public/* dist/"
+    "build": "echo No build step needed for pure static site"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
