@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "outputDirectory": "Quantum", // <--- Changed to "Quantum"
+  "outputDirectory": "Quantum",
   "routes": [
     {
       "src": "/(.*)",
